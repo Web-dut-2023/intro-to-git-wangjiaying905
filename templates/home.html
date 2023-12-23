@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>个人博客</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- BootStrap Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column" style="padding-top:40px;">
+
+      <div class="profile">
+        <img src="{% static 'img/profile-img.jpg' %}" alt="" class="img-fluid">
+        <h1 class="text-light"><a href="index.html">王佳莹</a></h1>
+        <div class="social-links mt-3 text-center">
+         <div class="text-light">邮箱: xxxxxxx@qq.com</div>
+        </div>
+
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>首页</span></a></li>
+          <li><a href="#introduce" class="nav-link scrollto"><i class="bx bx-user"></i> <span>介绍</span></a></li>
+          <li><a href="#abouts" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>关于</span></a></li>
+          <li><a href="#develop" class="nav-link scrollto"><i class="bx bx-server"></i> <span>发展</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-server"></i> <span>博文</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>欢迎来到我的博客</h1>
+    </div>
+  </section>
+
+
+
+
+  <main id="main">
+
+    <!-- ======= introduce Section ======= -->
+    <section id="introduce" class="introduce">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="color: #4a2358;">介绍</h2>
+            <p><h5>欢迎来到我的博客网站！这里是一个充满创意和探索的数字空间，我很高兴能与您分享我的想法、经验和见解。通过这个博客网站，我希望能够与您建立起互动和交流的桥梁，共同探索无限可能。</h5></p>
+        </div>
+
+        <div class="row" style="padding-top: 30px;">
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3 style="color: #4a2358;">博客结构</h3>
+            <p class="fst-italic">
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                  <ul>
+                  <li style="background-color: #3fccc0; border: 1px solid red;">
+                      <ul>
+                          <li style="padding-left: 180px; padding-top: 10px;"><h5 style="font-weight: bolder;">首页</h5></li>
+                          <li style="padding-left: 24px; padding-right: 24px;"><h5>这里是博客开始的地方</h5></li>
+                      </ul>
+                  </li>
+                  <li style="background-color: #3fcc81; border: 1px solid red;">
+                      <ul>
+                          <li style="padding-left: 180px; padding-top: 10px;"><h5 style="font-weight: bolder;">介绍</h5></li>
+                          <li style="padding-left: 24px; padding-right: 24px;"><h5>这里展示了平台的基本结构与功能，让您更清晰的认识和了解这个博客网站</h5></li>
+                      </ul>
+                  </li>
+                  <li style="background-color: #7387e9; border: 1px solid red;">
+                      <ul>
+                          <li style="padding-left: 180px; padding-top: 10px;"><h5 style="font-weight: bolder;">关于</h5></li>
+                          <li style="padding-left: 24px; padding-right: 24px;"><h5>这里是对网站文章类型占比和文章内容占比进行可视化展示</h5></li>
+                      </ul>
+                  </li>
+                  </ul>
+              </div>
+              <div class="col-lg-6">
+                  <ul>
+                  <li style="background-color: #ed7e7e; border: 1px solid red;">
+                      <ul>
+                          <li style="padding-left: 180px; padding-top: 10px;"><h5 style="font-weight: bolder;">发展</h5></li>
+                          <li style="padding-left: 24px; padding-right: 24px;"><h5>这里可以了解网站的迭代版本，对各个版本所稍做的改进进行了记录。</h5></li>
+                      </ul>
+                  </li>
+                  <li style="background-color: #eddce7; border: 1px solid red;">
+                      <ul>
+                          <li style="padding-left: 180px; padding-top: 10px;"><h5 style="font-weight: bolder;">博文</h5></li>
+                          <li style="padding-left: 24px; padding-right: 24px;"><h5>这里展示了所有的博文，可以根据标签，选择文章来阅读</h5></li>
+                      </ul>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+            <p>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End introduce Section -->
+
+
+    <!-- ======= abouts Section ======= -->
+    <section id="abouts" class="abouts section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="color: #4a2358;">关于</h2>
+          <p><h5>本博客基于Django进行后端开发，使用HTML、CSS、JavaScript和Bootstrap进行前端页面开发。在平台中所展示的文章包含了科学技术、健身训练、生活健康、运动器材、生活小贴士、国家政治和娱乐新闻这7大主题的内容。</h5></p>
+        </div>
+
+        <div class="row skills-content" style="padding-top: 30px;">
+          <h3 style="color: #4a2358;">可视化展示</h3>
+          <div class="col-lg-6" data-aos="fade-up">
+              <canvas id="canvas1" width="250" height="250"></canvas>
+              <canvas id="canvas2" width="250" height="250"></canvas>
+              <canvas id="canvas3" width="250" height="250"></canvas>
+              <canvas id="canvas4" width="250" height="250"></canvas>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="about">科学技术<i class="val">60%</i></span>
+              <div class="progress-bar-wrap" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="about">健身训练<i class="val">50%</i></span>
+              <div class="progress-bar-wrap" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="about">生活健康<i class="val">65%</i></span>
+              <div class="progress-bar-wrap" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="about">运动器材<i class="val">73%</i></span>
+              <div class="progress-bar-wrap" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="about">生活小贴士<i class="val">66%</i></span>
+              <div class="progress-bar-wrap" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="about">国家政治<i class="val">95%</i></span>
+              <div class="progress-bar-wrap" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="about">娱乐新闻<i class="val">45%</i></span>
+              <div class="progress-bar-wrap" style="height: 20px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End abouts Section -->
+
+    <!-- ======= develop Section ======= -->
+    <section id="develop" class="develop">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="color: #4a2358;">发展</h2>
+          <p><h5>随着技术的不断的发展，平台所使用的技术的不断更新，平台不断的进行功能的添加和完善，不断的进行版本迭代。</h5></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="develop-title" style="color: #4a2358;">版本迭代</h3>
+            <div class="develop-item">
+              <h4>博客v1.1</h4>
+              <h5 style="background-color: #198754">2023年10月</h5>
+              <ul>
+                <li>使用ckeditor富文本编写博客</li>
+                <li>提升Django为最新版本</li>
+              </ul>
+            </div>
+            <div class="develop-item">
+              <h4>博客v1.0</h4>
+              <h5 style="background-color: darkred;">2022年11月</h5>
+              <ul>
+                <li>完成博客网站博文功能</li>
+                <li>完成博客网站发展功能</li>
+                <li>完成博客网站关于功能</li>
+                <li>完成博客网站介绍功能</li>
+                <li>完成博客网站首页功能</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section><!-- End develop Section -->
+
+
+          <!-- ======= Portfolio Section ======= -->
+         <section id="portfolio" class="portfolio section-bg">
+            <div class="container">
+
+              <div class="section-title">
+                <h2 style="color: #4a2358;">博文</h2>
+                  <p><h5>博文页面是我与读者分享我的观点和知识的地方。在这里，我将定期发布新的博文，涵盖各种主题，包括科技、文化、社会问题和个人成长等。我希望通过这些博文能够启发您的思考，激发您的好奇心，并与您展开讨论。</h5></p>
+              </div>
+
+
+              <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+                {% for article in articles %}
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                  <div class="portfolio-wrap" style="width: 400px; height: 248px;">
+                    <img src="{{ article.image }}" class="img-fluid" style="height: 100%; width: 100%;">
+                  </div>
+                    <div style="padding-top: 10px; line-height: 100%; text-align: center;">
+                        <a href="/project/{{ article.id }}">{{ article.title }}</a>
+                        <span style="background-color: #4a2358; color: #f5f8fd; border: 3px solid #4a2358;">{{ article.tag }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+
+              </div>
+
+            </div>
+          </section>
+
+
+  </main>
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <!--Boot Strap link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+        function toCanvas(id, progress, progress2, content) {
+            //canvas进度条
+            var canvas = document.getElementById(id),
+                ctx = canvas.getContext("2d"),
+                percent = progress,
+                percent2 = progress2,
+                //最终百分比
+                circleX = canvas.width / 2, // 中心x坐标
+                circleY = canvas.height / 2, //中心y坐标
+                radius = 100, //圆环半径
+                lineWidth = 15, // 圆形线条的宽度
+                fontSize = 15; //字体大小
+
+
+            //画圆
+            function circle(cx, cy, r) {
+                ctx.beginPath();
+                ctx.lineWidth = lineWidth;
+                ctx.strokeStyle = '#eee';
+                ctx.arc(cx, cy, r, Math.PI, Math.PI * 2);
+                //ctx.arc(cx, cy, r, Math.PI * 2 / 3, Math.PI * 1 / 3);
+                ctx.stroke();
+            }
+
+            //画弧线
+            function sector(cx, cy, r, startAngle, endAngle, anti) {
+                ctx.beginPath();
+                ctx.lineWidth = lineWidth;
+
+                // 渐变色 - 可自定义
+                var linGrad = ctx.createLinearGradient(
+                    circleX - radius - lineWidth, circleY, circleX + radius + lineWidth, circleY
+                );
+                linGrad.addColorStop(0.0, '#4a2358');
+
+                ctx.strokeStyle = linGrad;
+                //圆弧两端的样式
+                ctx.lineCap = 'round';
+                ctx.arc(cx, cy, r, Math.PI, Math.PI * (1 + endAngle / 100));
+                ctx.stroke();
+            }
+
+            //刷新
+            function loading() {
+                var percent3 = progress;
+                if (percent < percent2) percent = percent2;
+                if (process >= percent) clearInterval(circleLoading);
+                // if (process2 >= percent) clearInterval(circleLoading);
+                //清除canvas内容
+                ctx.clearRect(0, 0, circleX * 2, circleY * 2);
+
+                //中间的字
+                ctx.font = fontSize + 'px April';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillStyle = '#999';
+                ctx.fillText(parseFloat(process).toFixed(0) + '%', circleX, circleY * 4 / 5);
+                ctx.fillText(content, circleX, circleY);
+                //圆形
+                circle(circleX, circleY, radius);
+
+                //圆弧
+                sector(circleX, circleY, radius, Math.PI * 2 / 3, process);
+
+                //控制结束时动画的速度
+                if (process < percent3) {
+                    if (process / percent > 0.90) {
+                        process += 0.30;
+                    } else if (process / percent > 0.80) {
+                        process += 0.55;
+                    } else if (process / percent > 0.70) {
+                        process += 0.75;
+                    } else {
+                        process += 1.0;
+                    }
+                }
+
+            }
+
+            var process = 0.0;
+
+            var circleLoading = window.setInterval(function () {
+                loading();
+            }, 20);
+
+        }
+        var canva_top1_name = "{{ canva_top1_name }}"
+        var canva_top2_name = "{{ canva_top2_name }}"
+        var canva_top3_name = "{{ canva_top3_name }}"
+        var canva_top4_name = "{{ canva_top4_name }}"
+        var canva_top1_num = Number("{{ canva_top1_num }}")
+        var canva_top2_num = "{{ canva_top2_num }}"
+        var canva_top3_num = "{{ canva_top3_num }}"
+        var canva_top4_num = "{{ canva_top4_num }}"
+        toCanvas('canvas1', canva_top1_num, 80, canva_top1_name);
+        toCanvas("canvas2", canva_top2_num, 80, canva_top2_name);
+        toCanvas('canvas3', canva_top3_num, 80, canva_top3_name);
+        toCanvas("canvas4", canva_top4_num, 80, canva_top4_name);
+    </script>
+
+</body>
+
+</html>
